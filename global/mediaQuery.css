@@ -60,15 +60,15 @@
 
 @media screen and (max-width: 789px) {
   .logoLarge {
-    display: block;
+    /* display: ; */
     left: 1rem;
-    width: 30rem;
+    width: 25rem;
   }
   nav .menu {
     margin-left: 6rem;
   }
 }
-@media screen and (max-width: 401px) {
+@media screen and (max-width: 450px) {
   nav .menu {
     margin-left: 4rem;
   }
@@ -77,4 +77,9 @@
     right: 1rem;
     /* border: 1px solid red; */
   }
+  .logoLarge {
+    left: 0;
+    width: 20rem;
+  }
 }
+
