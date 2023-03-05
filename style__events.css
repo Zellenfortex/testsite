@@ -1,0 +1,50 @@
+
+:root {
+  --body-color: hsl(195, 100%, 12%);
+  --heading-color: hsl(16, 84%, 64%);
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: var(--body-color);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+
+.custom-shape-divider-bottom-1672010926 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1672010926 svg {
+    position: relative;
+    display: block;
+    width: calc(129% + 1.3px);
+    height: 52px;
+}
+
+.custom-shape-divider-bottom-1672010926 .shape-fill {
+    fill: #FFFFFF;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .custom-shape-divider-bottom-1672010926 svg {
+        width: calc(127% + 1.3px);
+        height: 25px;
+    }
+}

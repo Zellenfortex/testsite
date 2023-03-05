@@ -1,0 +1,112 @@
+.logo {
+  /* border: 1px solid red;   */
+  max-width: 14rem;
+  }
+  .logo img {
+    float: right;
+    margin: 9px 36px;
+    width: 14rem;
+    /* border: 1px solid red; */
+    align-content: flex-start;
+    transition: 0.3s;
+  }
+  nav {
+    position: fixed;
+    width: 100%;
+    transition: 0.5s;
+    z-index: 1;
+    /* border: 1px solid red; */
+  }
+  .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: 1px solid white; */
+  }
+  nav ul {
+    /* border: 1px solid red; */
+    list-style: none;
+    overflow: hidden;
+    padding-top: 5px;
+    margin: 0;
+    height: 3.55rem;  /*max-height */
+    text-align: center;
+    transition: 0.3s;
+  }
+  nav ul li {
+    display: inline-block;
+    padding: 14px 20px;
+    /* border: 1px solid white; */
+  }
+  nav ul li a {
+    font-family: K2D;
+    font-weight: 300;
+    padding: 19px 10px 10px 10px;
+    text-decoration: none;
+    color: hsl(16, 84%, 64%);
+    color: var(--heading-color);
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    /* border: 1px solid blue; */
+  }
+  .active {
+    /* font-weight: bold; */
+    position: relative;
+    /* border: 1px solid red; */
+  }
+  
+  .active::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: var(--heading-color);
+    height: 0.05em;
+    transition: 0.2s ease-in-out;
+    /* border: 1px solid red; */
+  }
+  
+  /* UnderLine On Hover*/
+  
+  .underline {
+    position: relative;
+  }
+  .underline:before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    height: 0.05em;
+    background-color: var(--heading-color);
+    transform: scaleX(0);
+    /* transform-origin: center; */
+    transition: transform 0.12s ease-in-out;
+  }
+  .underline:hover:before {
+    transform: scaleX(1);
+    /* transform-origin: center; */
+  }
+  
+  /*  UNDER LINE WHEN SCROLLY */
+  .underLineBoldWhenScroll {
+    position: relative;
+  }
+  .underLineBoldWhenScroll:before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    height: 0.17em;
+    background-color: var(--heading-color);
+    transform: scaleX(0);
+    /* transform-origin: center; */
+    transition: transform 0.12s ease-in-out;
+  }
+  .underLineBoldWhenScroll:hover:before {
+    transform: scaleX(1.1);
+    /* transform-origin: center; */
+  }

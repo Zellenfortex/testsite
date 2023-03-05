@@ -1,0 +1,339 @@
+@import url("https://fonts.googleapis.com/css2?family=K2D:wght@100;300;400;700;800&family=Outfit:wght@400;700&display=swap");
+/* *{
+  border: 0.1px solid red;
+} */
+body {
+  font-family: "K2D", sans-serif;
+  font-family: "Outfit", sans-serif;
+}
+:root {
+  --body-color: hsl(195, 100%, 12%);
+  --heading-color: hsl(16, 84%, 64%);
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+header {
+  background-color: var(--body-color);
+  width: 100%;
+  height: 93vh;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 46, 61, 0.75),
+      rgba(0, 46, 61, 0.75)
+    ),
+    url(./photos/blur.jpg) no-repeat 60% 30%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* LOGO LARGE */
+
+.logoLarge {
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  position: absolute;
+  max-width: 38rem;
+  top: 25rem;
+  left: 29rem;
+  opacity: 0;
+  filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.5));
+  animation: logoFadeIn ease 0.6s 0.9s, mover 2s infinite alternate;
+  -webkit-animation: logoFadeIn ease 0.6s 0.9s,
+    mover 1.5s infinite alternate-reverse;
+  animation-fill-mode: forwards;
+  /* transition: 0.2s ease-in-out; */
+}
+/* Hover Efect */
+/* .logoLarge:hover{
+  transform: scale(1.05);
+} */
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0) rotate(1deg);
+  }
+  100% {
+    transform: translateY(-11px);
+  }
+}
+@keyframes mover {
+  0% {
+    transform: translateY(0) rotate(1deg);
+  }
+  100% {
+    transform: translateY(-11px);
+  }
+}
+
+@keyframes logoFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* SVG 1 */
+
+.svg {
+  -webkit-user-drag: none;
+   -webkit-user-select: none;
+  position: absolute;
+  top: 27rem;
+  opacity: 0;
+  left: 0;
+  animation: fadeInAnimation ease 0.6s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.9s;
+}
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+    transform: translateX(-5rem);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* SVG 2 */
+.svg2 {
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  position: absolute;
+  opacity: 0;
+  top: 17rem;
+  right: 0;
+  animation: fadeInAnimation2 ease 0.6s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.9s;
+}
+@keyframes fadeInAnimation2 {
+  0% {
+    opacity: 0;
+    transform: translateX(5rem);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* .container {
+  width: 50%;
+  margin: 0 auto;
+}
+.row {
+  display: flex;
+}
+.col-left {
+  width: 50%;
+  padding: 20px;
+}
+.col-right {
+  width: 50%;
+  padding: 20px;
+}
+.card img {
+  width: 300px;
+}
+
+@media only screen and (max-width: 700px) {
+  .col-left,
+  .col-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+} */
+
+/* CARDS */
+
+.card-container {
+  width: 60%;
+  margin: 0 auto;
+  /* border: 1px solid red; */
+}
+
+.card-grid {
+  padding-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.card {
+  margin: 1rem 0;
+  background: white;
+  border-radius: 0.25rem;
+  /* box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2); */
+  overflow: hidden;
+}
+.card-header {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-header.card-image {
+  overflow: hidden;
+}
+.card-image > img {
+  display: block;
+  width: 100%;
+  max-height: 400px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
+  transition: 180ms transform ease-in-out;
+}
+.card:hover > .card-image > img {
+  transform: scale(1.01);
+}
+
+.card-body {
+  color: #f07f57;
+  padding-left: 1rem;
+  font-family: "K2D", sans-serif;
+  font-weight: 900;
+  font-size: 1.7rem;
+}
+
+
+/* More events button */
+
+.more-events{
+  margin-top: 4rem;
+  text-align: center;
+}
+.more-events > a{
+  text-transform: uppercase;
+  font-family: "K2D", sans-serif;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--body-color);
+}
+
+
+
+
+/*  SUBSCRIBE NEWS */
+
+.section1{
+  margin-top: 5rem;
+  height: 40rem;
+  background-color: rgb(255, 223, 181, 0.3);
+}
+
+.card2{
+  width: 40%;
+  background-color: var(--heading-color);
+  border-radius: 10px;
+}
+
+
+/* .content {
+  width: 70%;
+  font-size: 20px;
+  margin: 4rem auto;
+  border: 2px solid black;
+  display: flex;
+  flex-wrap: wrap;
+}
+.card img{
+  width: 30rem;
+  height: 24rem;
+  background-size: cover;
+  margin: 2rem 2rem;
+} */
+
+/* NAV */
+
+/* Hamburger Menu mobile */
+
+/* .hamburger {
+  width: 2.4rem;
+  cursor: pointer;
+}
+.hamburger span {
+  width: 100%;
+  height: 0.3rem;
+  display: block;
+  background: var(--heading-color);
+  transition: all 0.2s;
+  border-radius: 20px;
+}
+.middle-line {
+  margin: 10px 0;
+}
+.top-line.activeHamburger {
+  transform: rotate(-45deg) translateX(-12.5px);
+  width: 50%;
+}
+.middle-line.activeHamburger {
+  width: 80%;
+  transform: translateX(-6px);
+}
+.bottom-line.activeHamburger {
+  transform: rotate(45deg) translateX(-12.5px);
+  width: 50%;
+} */
+
+/* Media query */
+
+/* @media screen and (max-width: 1240px) {
+  nav ul  {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+    position:absolute;
+    top: 1.1rem;
+    right: 3rem;
+    transition: 0.3s ease;
+  }
+  .svg {
+    top: 15rem;
+  }
+  .svg2 {
+    top: 40rem;
+  }
+  .logoLarge {
+    left: 10rem;
+  }
+  nav .menu{
+    display: block;
+    margin-left: 20rem;
+  }
+
+}
+@media screen and (min-width: 1240px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 789px) {
+  .logoLarge {
+    display: none;
+  }
+  nav .menu{
+    margin-left: 6rem;
+  }
+}
+@media screen and (max-width: 401px) {
+  
+  nav .menu{
+    margin-left: 4rem;
+  }
+  .hamburger {
+    right: 1rem;
+  }
+} */

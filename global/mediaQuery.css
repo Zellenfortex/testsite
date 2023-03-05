@@ -1,0 +1,80 @@
+@media screen and (max-width: 1240px) {
+  nav ul {
+    background-color: grey;
+    position: fixed;
+    right: 0;
+    display: none;
+    padding: 0;
+    min-width: 20rem;
+    flex-direction: column;
+    height: 100vh;
+    transition: 0.3s ease;
+    /* transform: translateX(-100%); */
+  }
+
+  nav ul li {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0rem 0;
+    margin-top: 3rem;
+  }
+
+  nav ul {
+    border: 1px solid red;
+  }
+  .active::before {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    /* padding-left: 20rem; */
+    top: 1.4rem;
+    right: 3rem;
+    transition: 0.3s ease;
+    /* border: 1px solid red; */
+  }
+  .svg {
+    /* display: none; */
+    top: 15rem;
+  }
+  .svg2 {
+    top: 40rem;
+  }
+  .logoLarge {
+    left: 10rem;
+  }
+  nav .menu {
+    display: block;
+    margin-left: 20rem;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 789px) {
+  .logoLarge {
+    display: block;
+    left: 1rem;
+    width: 30rem;
+  }
+  nav .menu {
+    margin-left: 6rem;
+  }
+}
+@media screen and (max-width: 401px) {
+  nav .menu {
+    margin-left: 4rem;
+  }
+  .hamburger {
+    /* padding-left: 20rem; */
+    right: 1rem;
+    /* border: 1px solid red; */
+  }
+}

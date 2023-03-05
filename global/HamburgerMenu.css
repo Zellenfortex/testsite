@@ -1,0 +1,27 @@
+.hamburger {
+    width: 2.4rem;
+    cursor: pointer;
+  }
+  .hamburger span {
+    width: 100%;
+    height: 0.3rem;
+    display: block;
+    background: var(--heading-color);
+    transition: all 0.2s;
+    border-radius: 20px;
+  }
+  .middle-line {
+    margin: 10px 0;
+  }
+  .top-line.activeHamburger {
+    transform: rotate(-45deg) translateX(-12.5px);
+    width: 50%;
+  }
+  .middle-line.activeHamburger {
+    width: 80%;
+    transform: translateX(-6px);
+  }
+  .bottom-line.activeHamburger {
+    transform: rotate(45deg) translateX(-12.5px);
+    width: 50%;
+  }

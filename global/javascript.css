@@ -1,0 +1,24 @@
+/* Java transition */
+
+.active.lineActive::before {
+    height: 0.17em;
+    /* left: -9px; */
+    /* width: 4.5em; */
+    width: 105%;
+    transform: translateY(5px) scaleX(1.1);
+  }
+  .logo img.logoImg {
+    width: 9rem;
+    transform: translateX(-6em);
+  }
+  nav.nav__color {
+    background-color: hsl(196, 96%, 9%, 0.95);
+    /* background-color: rgb(236, 11, 180); */
+  }
+  nav ul.padding__topUl {
+    padding-top: 0px;
+  }
+
+  .hamburger.resizeToggleMobile{
+    transform:  translateY(-0.7em) scale(0.7);
+  }
